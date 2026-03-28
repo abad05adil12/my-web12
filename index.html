@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevCraft Studio — Websites & Software</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav id="navbar">
+    <a href="#home" class="nav-logo">Dev<span>Craft</span></a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Work</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-socials">
+      <a href="https://github.com/abad05adil12" target="_blank" title="GitHub">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+        </svg>
+      </a>
+      <a href="https://instagram.com/dev_craft2" target="_blank" title="Instagram">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <section id="home">
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-grid"></div>
+    <div class="hero-orb orb1"></div>
+    <div class="hero-orb orb2"></div>
+    <div class="hero-orb orb3"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Available for projects</div>
+      <h1>I build<br><span class="line2">digital</span><span class="line3">experiences.</span></h1>
+      <span class="typewriter-wrap"><span id="tw"></span><span class="tw-cursor"></span></span>
+      <p class="hero-sub">Full-stack developer crafting high-performance websites and custom software solutions that
+        scale. From concept to deployment — clean, fast, pixel-perfect.</p>
+      <div class="hero-ctas">
+        <a href="#services" class="btn-primary magnetic ripple-btn">Explore Services →</a>
+        <a href="#contact" class="btn-ghost magnetic ripple-btn">Let's Talk</a>
+      </div>
+      <div class="hero-scroll">
+        <div class="scroll-line"></div>scroll
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <div class="section-label">What I do</div>
+      <h2 class="glitch" data-text="Services Built for Results">Services Built<br>for Results</h2>
+      <p class="section-intro">Every project is a partnership. I deliver solutions that are engineered with precision
+        and designed to perform.</p>
+      <div class="services-grid reveal">
+        <div class="service-card">
+          <div class="service-num">01</div>
+          <div class="service-icon">🌐</div>
+          <h3>Web Development</h3>
+          <p>Custom websites built with modern frameworks — fast-loading, SEO-optimized, and designed to convert
+            visitors into clients.</p>
+          <div class="service-tags"><span class="tag">React</span><span class="tag">Next.js</span><span
+              class="tag">Node</span><span class="tag">Tailwind</span></div>
+        </div>
+        <div class="service-card">
+          <div class="service-num">02</div>
+          <div class="service-icon">⚙️</div>
+          <h3>Software Development</h3>
+          <p>Scalable software solutions tailored to your business — from internal tools and automation to full
+            enterprise systems.</p>
+          <div class="service-tags"><span class="tag">Python</span><span class="tag">APIs</span><span
+              class="tag">SaaS</span><span class="tag">Cloud</span></div>
+        </div>
+        <div class="service-card">
+          <div class="service-num">03</div>
+          <div class="service-icon">📱</div>
+          <h3>UI/UX Design</h3>
+          <p>Interfaces that are not just beautiful but intuitive. Research-driven design that puts your users first and
+            drives engagement.</p>
+          <div class="service-tags"><span class="tag">Figma</span><span class="tag">Prototyping</span><span
+              class="tag">Design Systems</span></div>
+        </div>
+        <div class="service-card">
+          <div class="service-num">04</div>
+          <div class="service-icon">🛒</div>
+          <h3>E-Commerce Solutions</h3>
+          <p>Full-featured online stores with smooth checkouts, inventory management, and payment gateway integration
+            that sells.</p>
+          <div class="service-tags"><span class="tag">Shopify</span><span class="tag">WooCommerce</span><span
+              class="tag">Stripe</span></div>
+        </div>
+        <div class="service-card">
+          <div class="service-num">05</div>
+          <div class="service-icon">🔌</div>
+          <h3>API & Integrations</h3>
+          <p>Connect your platforms seamlessly. REST & GraphQL APIs, third-party integrations, and microservices
+            architecture.</p>
+          <div class="service-tags"><span class="tag">REST</span><span class="tag">GraphQL</span><span
+              class="tag">Webhooks</span></div>
+        </div>
+        <div class="service-card">
+          <div class="service-num">06</div>
+          <div class="service-icon">🚀</div>
+          <h3>Maintenance & Support</h3>
+          <p>Ongoing care for your digital products — updates, performance monitoring, security patches, and priority
+            support.</p>
+          <div class="service-tags"><span class="tag">Hosting</span><span class="tag">DevOps</span><span
+              class="tag">CI/CD</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-visual reveal-left">
+          <div class="about-box main">
+            <div class="floating-badge">🏆 5★ Rated</div>
+            <div class="about-stat">
+              <div class="stat-item">
+                <div class="num" data-target="50" data-suffix="+">0</div>
+                <div class="label">Projects Done</div>
+              </div>
+              <div class="stat-item">
+                <div class="num" data-target="3" data-suffix="+">0</div>
+                <div class="label">Years Exp.</div>
+              </div>
+              <div class="stat-item">
+                <div class="num" data-target="100" data-suffix="%">0</div>
+                <div class="label">Satisfaction</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal-right">
+          <div class="section-label">About me</div>
+          <h2>Code. Create.<br>Deliver.</h2>
+          <p>I'm a full-stack developer and designer passionate about building things that actually work — and look
+            stunning while doing it. I bridge the gap between technical excellence and visual craft.</p>
+          <p>Every line of code I write is intentional. Every pixel is considered. Whether you need a landing page or a
+            complex software system, I deliver with precision and speed.</p>
+          <div class="skill-bars">
+            <div class="skill-bar">
+              <div class="skill-label"><span>Frontend Dev</span><span>95%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="95"></div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-label"><span>Backend Dev</span><span>88%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="88"></div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-label"><span>UI/UX Design</span><span>82%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="82"></div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-label"><span>Software Architecture</span><span>80%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="container">
+      <div class="section-label">How it works</div>
+      <h2>Simple Process,<br>Exceptional Results</h2>
+      <p class="section-intro">From first conversation to launch, a clear workflow that keeps you informed at every
+        stage.</p>
+      <div class="process-steps reveal">
+        <div class="step">
+          <div class="step-dot">01</div>
+          <h3>Discovery</h3>
+          <p>We talk through your goals, audience, and vision to align on the perfect approach.</p>
+        </div>
+        <div class="step">
+          <div class="step-dot">02</div>
+          <h3>Design</h3>
+          <p>Wireframes and prototypes crafted for your approval before a single line of code is written.</p>
+        </div>
+        <div class="step">
+          <div class="step-dot">03</div>
+          <h3>Development</h3>
+          <p>Clean, performant code built with modern best practices. Regular updates throughout.</p>
+        </div>
+        <div class="step">
+          <div class="step-dot">04</div>
+          <h3>Launch</h3>
+          <p>Tested, optimized, and deployed. Full handoff with documentation and ongoing support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-label">Selected work</div>
+      <h2>Recent Projects</h2>
+      <p class="section-intro">A glimpse of what I've built — each project a unique challenge solved with code and
+        creativity.</p>
+      <div class="portfolio-grid reveal">
+        <div class="portfolio-card tilt-card">
+          <div class="portfolio-thumb p1">🏢<div class="thumb-overlay"><span>View Project</span></div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-type">SaaS Platform</div>
+            <h3>Analytics Dashboard</h3>
+            <p>Real-time data visualization platform for enterprise clients — React, D3.js, Node.js backend.</p>
+          </div>
+        </div>
+        <div class="portfolio-card tilt-card">
+          <div class="portfolio-thumb p2">🛍️<div class="thumb-overlay"><span>View Project</span></div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-type">E-Commerce</div>
+            <h3>Fashion Storefront</h3>
+            <p>Shopify custom theme with 3D product viewer and AR try-on feature.</p>
+          </div>
+        </div>
+        <div class="portfolio-card tilt-card">
+          <div class="portfolio-thumb p3">🌿<div class="thumb-overlay"><span>View Project</span></div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-type">Web App</div>
+            <h3>Booking Platform</h3>
+            <p>Full-stack reservation system with calendar sync and payment processing.</p>
+          </div>
+        </div>
+        <div class="portfolio-card tilt-card">
+          <div class="portfolio-thumb p4">🔥<div class="thumb-overlay"><span>View Project</span></div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-type">Landing Page</div>
+            <h3>Startup Launch</h3>
+            <p>High-converting landing page that generated 3,000+ signups in launch week.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="container">
+      <div class="section-label">Investment</div>
+      <h2>Transparent Pricing</h2>
+      <p class="section-intro">No surprise fees. Choose the scope that fits your project — or let's build a custom
+        package together.</p>
+      <div class="pricing-grid reveal">
+        <div class="pricing-card">
+          <div class="price-plan">Starter</div>
+          <div class="price-amount"><span>$</span>499</div>
+          <div class="price-note">/ one-time</div>
+          <ul class="price-features">
+            <li>Single-page website</li>
+            <li>Mobile responsive</li>
+            <li>Contact form integration</li>
+            <li>Basic SEO setup</li>
+            <li>2 revision rounds</li>
+            <li>7-day delivery</li>
+          </ul><a href="#contact" class="btn-price ripple-btn">Get Started</a>
+        </div>
+        <div class="pricing-card featured">
+          <div class="featured-badge">Most Popular</div>
+          <div class="price-plan">Professional</div>
+          <div class="price-amount"><span>$</span>799</div>
+          <div class="price-note">/ one-time</div>
+          <ul class="price-features">
+            <li>Multi-page website / app</li>
+            <li>Custom UI/UX design</li>
+            <li>CMS integration</li>
+            <li>Advanced SEO & analytics</li>
+            <li>API integrations</li>
+            <li>Unlimited revisions</li>
+            <li>14-day delivery</li>
+            <li>1-month free support</li>
+          </ul><a href="#contact" class="btn-price ripple-btn">Get Started</a>
+        </div>
+        <div class="pricing-card">
+          <div class="price-plan">Enterprise</div>
+          <div class="price-amount">Custom</div>
+          <div class="price-note">let's talk</div>
+          <ul class="price-features">
+            <li>Complex software systems</li>
+            <li>Dedicated development</li>
+            <li>Full-stack architecture</li>
+            <li>Team collaboration</li>
+            <li>Ongoing retainer option</li>
+            <li>Priority support 24/7</li>
+          </ul><a href="#contact" class="btn-price ripple-btn">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-info reveal-left">
+          <div class="section-label">Get in touch</div>
+          <h2>Start Your<br>Project Today</h2>
+          <p>Have an idea or a problem to solve? Let's talk. I typically respond within 24 hours and offer a free
+            30-minute discovery call.</p>
+          <div class="contact-links">
+            <a href="mailto:abadadilwork@gmail.com" class="contact-link">
+              <div class="contact-link-icon">📧</div>hello@devcraft.dev
+            </a>
+            <a href="https://github.com/abad05adil12" target="_blank" class="contact-link">
+              <div class="contact-link-icon"><svg style="width:18px;height:18px;fill:currentColor;" viewBox="0 0 24 24">
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                </svg></div>github.com/abadadil
+            </a>
+            <a href="https://instagram.com/dev_craft2" target="_blank" class="contact-link">
+              <div class="contact-link-icon"><svg style="width:18px;height:18px;fill:currentColor;" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                </svg></div>@devcraft.studio
+            </a>
+          </div>
+        </div>
+        <form class="contact-form reveal-right" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group"><label>Name</label><input type="text" placeholder="Your name" required /></div>
+            <div class="form-group"><label>Email</label><input type="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group"><label>Service needed</label><select>
+              <option value="">Select a service...</option>
+              <option>Web Development</option>
+              <option>Software Development</option>
+              <option>UI/UX Design</option>
+              <option>E-Commerce</option>
+              <option>API & Integrations</option>
+              <option>Other</option>
+            </select></div>
+          <div class="form-group"><label>Budget range</label><select>
+              <option value="">Select budget...</option>
+              <option>Under $500</option>
+              <option>$500 – $1,500</option>
+              <option>$1,500 – $5,000</option>
+              <option>$5,000+</option>
+            </select></div>
+          <div class="form-group"><label>Project details</label><textarea
+              placeholder="Tell me about your project, goals, and timeline..."></textarea></div>
+          <button type="submit" class="btn-primary ripple-btn"
+            style="width:100%;justify-content:center;border:none;cursor:none;font-size:.9rem;">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <a href="#home" class="footer-logo">Dev<span>Craft</span></a>
+      <span class="footer-copy">© 2026 DevCraft Studio. All rights reserved.</span>
+      <div class="footer-socials">
+        <a href="https://github.com/abad05adil12" target="_blank"><svg viewBox="0 0 24 24">
+            <path
+              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+          </svg></a>
+        <a href="https://instagram.com/dev_craft2" target="_blank"><svg viewBox="0 0 24 24">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+          </svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#contact" class="float-btn" title="Quick contact">💬</a>
+  <script src="script.js"></script>
+</body>
+
+</html>
